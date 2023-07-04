@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#name-user {
+  color: #fff;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+body header .logo img {
+  width: 85px;
+  height: 90px;
+}
+body header .container .flex-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+body header .container .flex-block .flex-element {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header .container .flex-block .flex-element .contact {
+  color: #fff;
+  font-size: 14px;
+}
+body header .container .flex-block .flex-element #anim-two {
+  text-align: center;
+}
+body header .container .flex-block .flex-element #anim-two ul {
+  text-align: center;
+  list-style: none;
+}
+body header .container .flex-block .flex-element #anim-two ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+  margin: 0 5px;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  -webkit-animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.51, 1.305) alternate;
+          animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.51, 1.305) alternate;
+}
+body header .container .flex-block .flex-element #anim-two ul li:nth-child(1) {
+  background: orange;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+body header .container .flex-block .flex-element #anim-two ul li:nth-child(2) {
+  background: coral;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+body header .container .flex-block .flex-element #anim-two ul li:nth-child(3) {
+  background: darksalmon;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+body header .container .flex-block .flex-element #anim-two ul li:nth-child(4) {
+  background: indianred;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+body header .container .flex-block .flex-element #anim-two ul li:nth-child(5) {
+  background: lightcoral;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+body header .container .flex-block .flex-element #anim-two ul li:nth-child(6) {
+  background: lightcoral;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+@-webkit-keyframes bounce-balls {
+  30% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(205px);
+            transform: translateY(205px);
+  }
+  80% {
+    -webkit-transform: translateY(190px);
+            transform: translateY(190px);
+  }
+  100% {
+    -webkit-transform: translateY(195px);
+            transform: translateY(195px);
+  }
+}
+@keyframes bounce-balls {
+  30% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(205px);
+            transform: translateY(205px);
+  }
+  80% {
+    -webkit-transform: translateY(190px);
+            transform: translateY(190px);
+  }
+  100% {
+    -webkit-transform: translateY(195px);
+            transform: translateY(195px);
+  }
+}
+body main {
+  background: #000;
+  width: 100vw;
+  z-index: 5;
+  overflow: hidden;
+  position: relative;
+}
+body main .swiper-back {
+  z-index: -1;
+}
+body main .swiper-back .swiper-slide img {
+  min-width: 100vw;
+  height: auto;
+  opacity: 0.3;
+}
+body main .container {
+  position: absolute;
+  width: 83%;
+  top: 50px;
+  left: 0;
+  z-index: 10;
+  margin: 90px 5%;
+  background: rgba(255, 255, 255, 0.0509803922);
+  padding: 20px 3%;
+  border-right: 2px solid rgba(255, 255, 255, 0.2117647059);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2117647059);
+}
+body main .container .flex-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 200px;
+}
